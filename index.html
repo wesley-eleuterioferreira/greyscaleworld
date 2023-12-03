@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Grey Scale Home</title>
+    <style>
+      * {
+        padding-top: 5px;
+        padding-bottom: 5px;
+      }
+      .container {
+        display: grid;
+        height: 100vh;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-template-rows: 0.2fr 1.5fr 1.2fr 0.8fr;
+        grid-template-areas:
+          "nav nav nav nav"
+          "sidebar main main main"
+          "sidebar conten1 content2 content3"
+          "footer footer footer content3";
+        grid-gap: 15px;
+        text-align: center;
+        justify-content: center;
+        font-family: "Times New Roman", Times, serif;
+        font-size: 30px;
+      }
+      nav {
+        background-color: grey;
+        grid-area: nav;
+        padding-top: 10px;
+        border-radius: 8px;
+      }
+      nav:hover {
+        cursor: pointer;
+        background-color: black;
+        color: white;
+        transition: 1s;
+        text-decoration: underline;
+        text-underline-offset: 5px;
+        box-shadow: 5px 10px;
+      }
+
+      main {
+        background-color: grey;
+        grid-area: main;
+        padding-top: 10px;
+        border-radius: 17px;
+      }
+      main:hover {
+        cursor: pointer;
+        background-color: black;
+        color: white;
+        transition: 1s;
+        text-decoration: underline;
+        text-underline-offset: 5px;
+        box-shadow: 5px 10px;
+      }
+      #sidebar {
+        background-color: grey;
+        grid-area: sidebar;
+        padding-top: 10px;
+        border-radius: 17px;
+        overflow: auto;
+      }
+      #sidebar:hover {
+        cursor: pointer;
+        background-color: black;
+        color: white;
+        transition: 1s;
+        text-decoration: underline;
+        text-underline-offset: 5px;
+        box-shadow: 5px 10px;
+      }
+      #content1 {
+        background-color: grey;
+        grid-area: conten1;
+        padding-top: 10px;
+        border-radius: 17px;
+      }
+      #content1:hover {
+        cursor: pointer;
+        background-color: black;
+        color: white;
+        transition: 1s;
+        text-decoration: underline;
+        text-underline-offset: 5px;
+        box-shadow: 5px 10px;
+      }
+      #content2 {
+        background-color: grey;
+        grid-area: content2;
+        padding-top: 10px;
+        border-radius: 17px;
+      }
+      #content2:hover {
+        cursor: pointer;
+        background-color: black;
+        color: white;
+        transition: 1s;
+        text-decoration: underline;
+        text-underline-offset: 5px;
+        box-shadow: 5px 10px;
+      }
+      #content3 {
+        background-color: grey;
+        grid-area: content3;
+        padding-top: 10px;
+        border-radius: 17px;
+      }
+      #content3:hover {
+        cursor: pointer;
+        background-color: black;
+        color: white;
+        transition: 1s;
+        text-decoration: underline;
+        text-underline-offset: 5px;
+        box-shadow: 5px 10px;
+      }
+      footer {
+        background-color: grey;
+        grid-area: footer;
+        padding-top: 10px;
+        border-radius: 17px;
+      }
+      footer:hover {
+        cursor: pointer;
+        background-color: black;
+        color: white;
+        transition: 1s;
+        text-decoration: underline;
+        text-underline-offset: 5px;
+        box-shadow: 5px 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <nav>GREYSCALE WORLD</nav>
+      <main onclick="window.location.href='ilustrator.html'">ILUSTRATOR</main>
+      <div id="sidebar" onclick="window.location.href='animation.html'">
+        ANIMATION
+      </div>
+      <div id="content1" onclick="window.location.href='programming1.html'">
+        PROGRAMMING
+      </div>
+      <div id="content2">PROJECT</div>
+      <div id="content3" onclick="window.location.href='audio.html'">AUDIO</div>
+      <footer onclick="window.location.href='photoshop.html'">PHOTOSHOP</footer>
+    </div>
+  </body>
+</html>
